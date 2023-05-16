@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 管理Druid对象 -->
+    <bean id="dataSource123" class="com.alibaba.druid.pool.DruidDataSource">
+        <!-- setter配置属性 -->
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="12345"/>
+    </bean>
+
+    <!-- 管理c3p0对象 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="user" value="root"/>
+        <property name="password" value="12345"/>
+        <property name="maxPoolSize" value="1000"/>
+    </bean>
+
+</beans>

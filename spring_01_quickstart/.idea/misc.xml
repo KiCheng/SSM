@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_02_bean_instance/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_03_bean_lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_03_di_set/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_04_di_set/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_05_di_constructor/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_06_di_autoware/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_07_di_Collection/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_08_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_09_properties/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_10_container/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_11_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_12_annotation_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_13_annotation_di/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_14_annotation_manager2/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_15_ForMybatis/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

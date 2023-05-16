@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl">
+        <constructor-arg name="connectionNum" value="666"></constructor-arg>
+        <constructor-arg name="databaseName" value="mysql"></constructor-arg>
+    </bean>
+
+    <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl"></bean>
+
+       <bean id="orderDao" class="com.Lijiacheng.dao.factory.OrderDaoFactory" factory-method="getOrderDao"></bean>
+
+<!--       <bean id="bookFactory" class="com.Lijiacheng.dao.factory.BookDaoFactory"/>-->
+<!--       <bean id="bookDao" factory-bean="bookFactory" factory-method="getBookDao"/>-->
+
+       <bean id="bookDao" class="com.Lijiacheng.dao.factory.BookDaoFactoryBean"/>
+
+</beans>

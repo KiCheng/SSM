@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--1、导入spring的坐标-->
+
+        <!--2、创建Spring配置文件，配置对应类作为Spring管理的bean-->
+        <!-- class属性表示给bean定义类型 -->
+        <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl" scope="prototype"></bean>
+        <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+                <!-- 7.配置service与dao的关系-->
+                <!--
+                        property标签表示配置当前的bean属性
+                        name属性表示配置的是哪一个具体的属性
+                        ref属性表示参照的是哪一个bean
+                -->
+                <property name="userDao" ref="userDao"></property>
+        </bean>
+</beans>
