@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+enterprise:
+  name: 李嘉诚
+  age: 21
+  tel: 1766xxx6635
+  subject:
+    - Java
+    - Golang
+    - 前端
