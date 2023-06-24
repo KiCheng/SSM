@@ -6,7 +6,7 @@
 <!--       <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl" init-method="init" destroy-method="destroy"/>-->
        <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl" init-method="init" destroy-method="destroy"/>
 
-       <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+       <bean id="userService" class="com.Lijiacheng.service.impl.UserServiceImpl">
               <property name="userDao" ref="userDao"></property>
        </bean>
 

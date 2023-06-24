@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
-@ComponentScan("com.Lijiacheng.controller")
+@ComponentScan("com.Lijiacheng")  // 为了能够扫描到SpringMvcSupport类
 @EnableWebMvc
 
 public class SpringMvcConfig {

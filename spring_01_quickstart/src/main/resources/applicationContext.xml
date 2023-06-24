@@ -7,7 +7,7 @@
         <!--2、创建Spring配置文件，配置对应类作为Spring管理的bean-->
         <!-- class属性表示给bean定义类型 -->
         <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl" scope="prototype"></bean>
-        <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+        <bean id="userService" class="com.Lijiacheng.service.impl.UserServiceImpl">
                 <!-- 7.配置service与dao的关系-->
                 <!--
                         property标签表示配置当前的bean属性

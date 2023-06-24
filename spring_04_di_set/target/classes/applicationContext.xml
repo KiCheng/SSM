@@ -9,7 +9,7 @@
     </bean>
 
     <bean id="bookDao" class="com.Lijiacheng.dao.Impl.BookDaoImpl"/>
-    <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+    <bean id="userService" class="com.Lijiacheng.service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
         <property name="bookDao" ref="bookDao"></property>
     </bean>

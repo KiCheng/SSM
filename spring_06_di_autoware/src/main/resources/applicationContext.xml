@@ -5,7 +5,7 @@
 
     <bean id="userDao" class="com.Lijiacheng.dao.Impl.UserDaoImpl"/>
     <!-- autowire属性：开启自动装配，通常使用按类型装配 -->
-    <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl" autowire="byType"/>
+    <bean id="userService" class="com.Lijiacheng.service.impl.UserServiceImpl" autowire="byType"/>
 
 
 

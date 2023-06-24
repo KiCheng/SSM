@@ -7,15 +7,57 @@
   <version>1.0-SNAPSHOT</version>
   <name>maven_02_ssm Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <parent>
+    <groupId>org.example</groupId>
+    <artifactId>maven_01_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 可选项：设置父项目pom.xml位置路径 -->
+    <relativePath>../maven_01_parent/pom.xml</relativePath>
+  </parent>
+
   <dependencies>
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>maven_03_pojo</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>maven_04_dao</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <!--排除依赖是隐藏当前资源对应的依赖关系-->
+      <exclusions>
+        <exclusion>
+          <groupId>com.Lijiacheng</groupId>
+          <artifactId>maven_03_pojo</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
+
   <build>
-    <finalName>maven_02_ssm</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <path>/</path>
+          <uriEncoding>utf-8</uriEncoding>  <!--访问路径编解码字符集-->
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
+
+
+
 </project>

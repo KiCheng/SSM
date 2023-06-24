@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:21:36 +0800] "GET /springmvc_03_request_mapping HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:21:37 +0800] "GET /springmvc_03_request_mapping/ HTTP/1.1" 200 52 http-bio-8080-exec-3 466
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:49:24 +0800] "GET /springmvc_03_request_mapping HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:49:24 +0800] "GET /springmvc_03_request_mapping/ HTTP/1.1" 200 52 http-bio-8080-exec-3 31
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:49:32 +0800] "GET /springmvc_03_request_mapping/book/save HTTP/1.1" 200 22 http-bio-8080-exec-4 52
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:49:38 +0800] "GET /springmvc_03_request_mapping/save HTTP/1.1" 404 949 http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:49:42 +0800] "GET /springmvc_03_request_mapping/user/save HTTP/1.1" 200 22 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:52:17 +0800] "GET /springmvc_03_request_mapping HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:52:17 +0800] "GET /springmvc_03_request_mapping/ HTTP/1.1" 200 52 http-bio-8080-exec-3 34
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:52:29 +0800] "GET /springmvc_03_request_mapping/user/save HTTP/1.1" 200 22 http-bio-8080-exec-4 50
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:10:52:32 +0800] "GET /springmvc_03_request_mapping/user/delete HTTP/1.1" 200 24 http-bio-8080-exec-5 3

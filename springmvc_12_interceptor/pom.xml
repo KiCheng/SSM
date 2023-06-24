@@ -7,15 +7,41 @@
   <version>1.0-SNAPSHOT</version>
   <name>springmvc_12_interceptor Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
+
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.2.24.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.15.2</version>
     </dependency>
   </dependencies>
+
   <build>
-    <finalName>springmvc_12_interceptor</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <path>/</path>
+          <uriEncoding>utf-8</uriEncoding>  <!--访问路径编解码字符集-->
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
+
 </project>

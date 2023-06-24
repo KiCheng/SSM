@@ -1,6 +1,6 @@
-package org.example;
+package com.Lijiacheng;
 
-public class Main {
+public class AppForAOP4 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }

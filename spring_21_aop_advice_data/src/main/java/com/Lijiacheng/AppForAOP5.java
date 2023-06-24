@@ -1,7 +1,14 @@
 package com.Lijiacheng;
 
-public class Main {
+import com.Lijiacheng.config.SpringConfig;
+import com.Lijiacheng.dao.BookDao;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class AppForAOP5 {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
+        BookDao bookDao = ctx.getBean(BookDao.class);
+        String name = bookDao.findName(100, "hfut");
+        System.out.println(name);
     }
 }

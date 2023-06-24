@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:09:39:07 +0800] "GET /springmvc_01_quickstart HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:09:39:07 +0800] "GET /springmvc_01_quickstart/ HTTP/1.1" 200 52 http-bio-8080-exec-3 35
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:09:39:08 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [06/Jun/2023:09:39:22 +0800] "GET /springmvc_01_quickstart/save HTTP/1.1" 200 20 http-bio-8080-exec-7 69

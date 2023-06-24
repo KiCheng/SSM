@@ -1,9 +1,9 @@
 package com.Lijiacheng.service;
 
-import com.Lijiacheng.domain.Account;
 import org.springframework.transaction.annotation.Transactional;
 
-@Transactional
+import java.io.IOException;
+
 public interface AccountService {
     public void transfer(String in, String out, double money);
 }

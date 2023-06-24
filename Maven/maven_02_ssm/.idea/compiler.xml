@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/../maven_03_pojo/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../maven_04_dao/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven_02_ssm" />
+        <module name="maven_03_pojo" />
+        <module name="maven_04_dao" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven_web" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

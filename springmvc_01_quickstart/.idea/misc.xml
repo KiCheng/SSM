@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_02_bean_load" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_03_request_mapping" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_04_request_param" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_05_response" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_06_rest" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_07_rest_case" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_08_ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_09_result" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_10_exception" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_11_pages" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_12_interceptor" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_02_bean_load/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_03_request_mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_04_request_param/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_05_response/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_06_rest/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_07_rest_case/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_08_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_09_result/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_10_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_11_pages/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_12_interceptor/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

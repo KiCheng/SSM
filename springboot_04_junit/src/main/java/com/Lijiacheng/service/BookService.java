@@ -1,2 +1,5 @@
-package com.Lijiacheng.service;public interface BookService {
+package com.Lijiacheng.service;
+
+public interface BookService {
+    public void save();
 }

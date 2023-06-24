@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>spring_01_quickstart</artifactId>
+    <artifactId>spring_16_junit</artifactId>
     <version>1.0-SNAPSHOT</version>
+
 
     <dependencies>
         <dependency>

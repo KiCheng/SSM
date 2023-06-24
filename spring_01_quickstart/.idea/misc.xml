@@ -20,7 +20,21 @@
         <option value="$PROJECT_DIR$/../spring_13_annotation_di/pom.xml" />
         <option value="$PROJECT_DIR$/../spring_14_annotation_manager2/pom.xml" />
         <option value="$PROJECT_DIR$/../spring_15_ForMybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_16_junit/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_17_aop_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_18_aop_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_19_aop_advice/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_20_aop_runspeed/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_21_aop_advice_data/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_22_aop_case_baidudisk/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_23_case_transfer/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_24_transfer_log/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring_16_ForJunit/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">

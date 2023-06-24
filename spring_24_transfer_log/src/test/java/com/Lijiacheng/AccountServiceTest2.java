@@ -10,13 +10,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringConfig.class)
-public class AccountServiceTest {
+public class AccountServiceTest2 {
     @Autowired
     private AccountService accountService;
 
     @Test
     public void testTransfer(){
-        accountService.transfer("Tom","Jerry",100D);
+        accountService.transfer("Tom","Jerry",50D);
     }
 
 }

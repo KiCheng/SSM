@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [05/Jun/2023:19:28:11 +0800] "GET /springmvc_02_bean_load HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [05/Jun/2023:19:28:12 +0800] "GET /springmvc_02_bean_load/ HTTP/1.1" 200 52 http-bio-8080-exec-3 758
+0:0:0:0:0:0:0:1 - - [05/Jun/2023:19:28:15 +0800] "GET /springmvc_02_bean_load/save HTTP/1.1" 200 20 http-bio-8080-exec-4 53

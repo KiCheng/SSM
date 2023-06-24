@@ -7,7 +7,6 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public interface AccountDao {
     /* 增删改查 */

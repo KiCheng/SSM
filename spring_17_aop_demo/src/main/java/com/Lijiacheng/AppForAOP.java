@@ -2,15 +2,14 @@ package com.Lijiacheng;
 
 
 import com.Lijiacheng.config.SpringConfig;
-import com.alibaba.druid.pool.DruidDataSource;
+import com.Lijiacheng.dao.BookDao;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import javax.sql.DataSource;
-
-public class AppForAnnotation {
+public class AppForAOP {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
-        DruidDataSource dataSource = (DruidDataSource) ctx.getBean(DataSource.class);
-        System.out.println(dataSource);
+        BookDao bookDao = ctx.getBean(BookDao.class);
+        bookDao.update();
+        System.out.println(bookDao.getClass());
     }
 }

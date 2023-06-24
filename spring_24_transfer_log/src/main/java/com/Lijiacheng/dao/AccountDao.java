@@ -1,6 +1,5 @@
 package com.Lijiacheng.dao;
 
-import com.Lijiacheng.domain.Account;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 

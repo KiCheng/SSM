@@ -1,6 +1,5 @@
-package com.Lijiacheng.service.Impl;
+package com.Lijiacheng.service.impl;
 
-import com.Lijiacheng.dao.Impl.UserDaoImpl;
 import com.Lijiacheng.dao.UserDao;
 import com.Lijiacheng.service.UserService;
 

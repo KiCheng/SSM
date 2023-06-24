@@ -1,13 +1,12 @@
 package com.Lijiacheng.dao;
 
 import com.Lijiacheng.domain.Book;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
+// TODO 添加 Mapper注释
+@Mapper
 public interface BookDao {
     @Insert("insert into tbl_book values(null, #{type}, #{name}, #{description})")
     public int save(Book book);

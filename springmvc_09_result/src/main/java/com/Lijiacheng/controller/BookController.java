@@ -2,7 +2,6 @@ package com.Lijiacheng.controller;
 
 import com.Lijiacheng.domain.Book;
 import com.Lijiacheng.service.BookService;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,27 +14,36 @@ public class BookController {
     private BookService bookService;
 
     @PostMapping
-    public boolean save(@RequestBody Book book) {
-        return bookService.save(book);
+    public Result save(@RequestBody Book book) {
+        boolean flag = bookService.save(book);
+        return new Result(flag ? Code.SAVE_OK : Code.SAVE_ERR, flag);
     }
 
     @DeleteMapping("/{id}")
-    public boolean delete(@PathVariable Integer id) {
-        return bookService.delete(id);
+    public Result delete(@PathVariable Integer id) {
+        boolean flag = bookService.delete(id);
+        return new Result(flag ? Code.DELETE_OK : Code.DELETE_ERR, flag);
     }
 
     @PutMapping
-    public boolean update(@RequestBody Book book) {
-        return bookService.update(book);
+    public Result update(@RequestBody Book book) {
+        boolean flag = bookService.update(book);
+        return new Result(flag ? Code.UPDATE_OK : Code.UPDATE_ERR, flag);
     }
 
     @GetMapping("/{id}")
-    public Book getById(@PathVariable Integer id) {
-        return bookService.getById(id);
+    public Result getById(@PathVariable Integer id) {
+        Book book = bookService.getById(id);
+        Integer code = book != null ? Code.GET_OK : Code.GET_ERR;
+        String msg = book != null ? "" : "未查询到信息，请重试";
+        return new Result(code, book, msg);
     }
 
     @GetMapping
-    public List<Book> getAll() {
-        return bookService.getAll();
+    public Result getAll() {
+        List<Book> books = bookService.getAll();
+        Integer code = books != null ? Code.GET_OK : Code.GET_ERR;
+        String msg = books != null ? "" : "未查询到信息，请重试";
+        return new Result(code, books, msg);
     }
 }

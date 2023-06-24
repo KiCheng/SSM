@@ -8,7 +8,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven_03_pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven_04_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven_01_parent/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../maven_01_parent/maven_web/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">

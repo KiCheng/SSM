@@ -1,16 +1,12 @@
 package com.Lijiacheng.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-
-import javax.sql.DataSource;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan("com.Lijiacheng")
-@Import(JdbcConfig.class)
+@ComponentScan("com.Lijiacheng")  // 默认会扫描该类所在的包下所有的配置类
+@EnableAspectJAutoProxy
 public class SpringConfig {
 
 }

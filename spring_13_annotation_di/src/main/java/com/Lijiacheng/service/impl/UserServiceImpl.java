@@ -1,10 +1,9 @@
-package com.Lijiacheng.service.Impl;
+package com.Lijiacheng.service.impl;
 
 import com.Lijiacheng.dao.UserDao;
 import com.Lijiacheng.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service

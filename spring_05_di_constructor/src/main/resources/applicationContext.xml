@@ -8,7 +8,7 @@
         <constructor-arg name="databaseName" value="mysql"></constructor-arg>
     </bean>
 
-    <bean id="userService" class="com.Lijiacheng.service.Impl.UserServiceImpl">
+    <bean id="userService" class="com.Lijiacheng.service.impl.UserServiceImpl">
         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
     </bean>
 

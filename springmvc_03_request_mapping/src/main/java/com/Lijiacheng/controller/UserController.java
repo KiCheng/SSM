@@ -1,2 +1,23 @@
-package com.Lijiacheng.controller;public class UserController {
+package com.Lijiacheng.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+    @RequestMapping("/save")
+    @ResponseBody
+    public String save(){
+        System.out.println("User save...");
+        return "{'module':'user save'}";
+    }
+
+    @RequestMapping("/delete")
+    @ResponseBody
+    public String delete(){
+        System.out.println("User delete...");
+        return "{'module':'user delete'}";
+    }
 }

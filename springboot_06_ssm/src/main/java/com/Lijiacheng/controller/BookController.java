@@ -2,7 +2,6 @@ package com.Lijiacheng.controller;
 
 import com.Lijiacheng.domain.Book;
 import com.Lijiacheng.exception.BusinessException;
-import com.Lijiacheng.exception.SystemException;
 import com.Lijiacheng.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -35,10 +34,10 @@ public class BookController {
 
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id) {
-//        // 模拟业务异常，包装成自定义异常
-//        if(id == 1){
-//            throw new BusinessException(Code.BUSINESS_ERR, "请不要用你的技术挑战我的饭碗！");
-//        }
+        // 模拟业务异常，包装成自定义异常
+        if(id == 1){
+            throw new BusinessException(Code.BUSINESS_ERR, "请不要用你的技术挑战我的饭碗！");
+        }
 //        //模拟系统异常，将可能出现的异常进行包装，转换成自定义异常
 //        try {
 //            int i = 1 / 0;

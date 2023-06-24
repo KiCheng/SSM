@@ -2,7 +2,7 @@ package com.Lijiacheng;
 
 
 import com.Lijiacheng.dao.UserDao;
-import com.Lijiacheng.service.Impl.UserServiceImpl;
+import com.Lijiacheng.service.impl.UserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

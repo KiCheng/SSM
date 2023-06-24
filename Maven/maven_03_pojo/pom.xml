@@ -6,4 +6,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>Archetype - maven_03_pojo</name>
   <url>http://maven.apache.org</url>
+
+  <parent>
+    <groupId>org.example</groupId>
+    <artifactId>maven_01_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 可选项：设置父项目pom.xml位置路径 -->
+    <relativePath>../maven_01_parent/pom.xml</relativePath>
+  </parent>
 </project>

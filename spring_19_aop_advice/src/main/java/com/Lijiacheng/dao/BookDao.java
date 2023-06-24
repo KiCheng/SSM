@@ -1,8 +1,7 @@
 package com.Lijiacheng.dao;
 
 public interface BookDao {
-    public void save();
+    public int select();
     public void update();
-    public void select();
-    public void delete();
+
 }

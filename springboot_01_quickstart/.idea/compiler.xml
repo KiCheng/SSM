@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_05_mybatis" />
+        <module name="springboot_02_read_data" />
+        <module name="springboot_01_quickstart" />
+        <module name="springboot_06_ssm" />
+        <module name="springboot_03_profile" />
+        <module name="springboot_04_junit" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_01_quickstart" options="-parameters" />
+      <module name="springboot_02_read_data" options="-parameters" />
+      <module name="springboot_03_profile" options="-parameters" />
+      <module name="springboot_04_junit" options="-parameters" />
+      <module name="springboot_05_mybatis" options="-parameters" />
+      <module name="springboot_06_ssm" options="-parameters" />
+    </option>
+  </component>
+</project>
